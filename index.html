@@ -2,59 +2,73 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Layout Streaming</title>
+    <title>Nilam Sari | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Menghubungkan CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">Vidio</div>
-
+        <h2 class="logo">Nilam Sari</h2>
         <ul class="menu">
-            <li>Home</li>
-            <li>Live</li>
-            <li>Sports</li>
-            <li>Movies</li>
-            <li>Kids</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <div class="search">
-            <input type="text" placeholder="What to watch today?">
-        </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-text">
-            <h1>A dan Z: InsyaAllah Cinta</h1>
-            <p>Drama • Romance</p>
-        </div>
+        <h1>Hi, I'm Nilam 💜</h1>
+        <p>Web Developer | Informatics Student</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
 
-        <div class="hero-image">
-            <img src="https://picsum.photos/600/400" alt="Movie">
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Saya adalah mahasiswa Informatika yang sedang belajar
+            pengembangan website dan desain UI sederhana.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="card-container">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">MySQL</div>
+            <div class="card">Git & GitHub</div>
         </div>
     </section>
-    <section class="movies">
-    <h2>Trending Now</h2>
-    <div class="movie-list">
-        <div class="card">Movie 1</div>
-        <div class="card">Movie 2</div>
-        <div class="card">Movie 3</div>
-        <div class="card">Movie 4</div>
-    </div>
-</section>
 
-<section class="movies">
-    <h2>Popular</h2>
-    <div class="movie-list">
-        <div class="card">Movie A</div>
-        <div class="card">Movie B</div>
-        <div class="card">Movie C</div>
-        <div class="card">Movie D</div>
-    </div>
-</section>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <div class="card">Website Login System</div>
+            <div class="card">Database Normalisasi</div>
+            <div class="card">Portfolio Page</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Connect With Me</h2>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Nilam Sari</p>
+    </footer>
 
 </body>
 </html>
