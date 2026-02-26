@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #0f0f0f;
+    background-color: #750f8a;
     color: white;
 }
 
@@ -69,4 +69,30 @@ body {
 .hero-image img {
     width: 500px;
     border-radius: 10px;
+}
+/* MOVIE SECTION */
+.movies {
+    padding: 40px 60px;
+}
+
+.movies h2 {
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #7f5af0;
 }
