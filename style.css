@@ -15,7 +15,7 @@ body {
 
 /* alternate section background to avoid monotony */
 .section:nth-of-type(even) {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(119, 81, 81, 0.05);
 }
 
 .section {
@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 30px;
     background-color: rgba(18,18,18,0.8);
     backdrop-filter: blur(5px);
     position: sticky;
@@ -39,48 +39,47 @@ body {
 /* Section headers */
 h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
     letter-spacing: 1px;
 }
 
-.menu li:hover {
-    color: #7f5af0;
-    transform: scale(1.1);
-    transition: transform 0.2s;
-}
-
 .logo {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     top: 20px;
     left: 40px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: rgb(170, 103, 103);
     z-index: 1000;
 }
 
 .menu {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
 }
 
-.menu li {
-    cursor: pointer;
+.menu a {
+    text-decoration: none;
+    color: rgb(194, 184, 184); /* samakan dengan logo */
+    font-weight: 600;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid rgb(170, 103, 103);
 }
 
 .menu li:hover {
-    color: #7f5af0;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    color: #4218c2;
 }
 
 .search input {
