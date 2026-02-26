@@ -7,7 +7,7 @@
 
 body {
     /* purple to blue gradient background */
-    background: linear-gradient(135deg, #750f8a, #4a00e0);
+    background: linear-gradient(135deg, #562061, #4a00e0);
     color: white;
     min-height: 100vh;
     transition: background 0.5s ease;
@@ -19,7 +19,7 @@ body {
 }
 
 .section {
-    padding: 60px 40px;
+    padding: 40px 30px;
 }
 
 
@@ -38,7 +38,7 @@ body {
 
 /* Section headers */
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 20px;
     background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
     -webkit-background-clip: text;
@@ -46,7 +46,7 @@ h2 {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     letter-spacing: 1px;
@@ -61,6 +61,12 @@ h2 {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    top: 20px;
+    left: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    z-index: 1000;
 }
 
 .menu {
