@@ -7,19 +7,19 @@
 
 body {
     /* purple to blue gradient background */
-    background: linear-gradient(135deg, #562061, #4a00e0);
+    background: linear-gradient(135deg, #820fc5, #4a00e0);
     color: white;
     min-height: 100vh;
-    transition: background 0.5s ease;
+    transition: background cubic-bezier(1, 0, 0, 1) ease;
 }
 
 /* alternate section background to avoid monotony */
 .section:nth-of-type(even) {
-    background: rgba(119, 81, 81, 0.05);
+    background: rgba(170, 128, 128, 0.05);
 }
 
 .section {
-    padding: 40px 30px;
+    padding: 40px 40px;
 }
 
 
@@ -100,9 +100,9 @@ h2 {
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    font-size: 50px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #b88e8f, #c96c97);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -110,25 +110,25 @@ h2 {
 .hero p {
     font-size: 18px;
     color: #dddddd;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .btn {
-    background: #7f5af0;
+    background: #130930;
     color: #fff;
     padding: 12px 30px;
-    border-radius: 30px;
+    border-radius: 40px;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-    background: #9b63ff;
+    background: #7c4ad1;
     transform: translateY(-2px);
 }
 
 .hero-text {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .hero-text h1 {
@@ -150,12 +150,12 @@ h2 {
 }
 
 .movies h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .movie-list {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .card {
