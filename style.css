@@ -2,178 +2,213 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    /* purple to blue gradient background */
-    background: linear-gradient(135deg, #820fc5, #4a00e0);
+    background: linear-gradient(135deg, #5d0685, #a4508b);
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
     color: white;
-    min-height: 100vh;
-    transition: background cubic-bezier(1, 0, 0, 1) ease;
+    scroll-behavior: smooth;
 }
 
-/* alternate section background to avoid monotony */
-.section:nth-of-type(even) {
-    background: rgba(170, 128, 128, 0.05);
+/* BOX UTAMA */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
 
-.section {
-    padding: 40px 40px;
-}
-
-
-/* NAVBAR */
-.navbar {
+/* Navbar */
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 30px;
-    background-color: rgba(18,18,18,0.8);
-    backdrop-filter: blur(5px);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: rgba(0,0,0,0.2);
 }
 
-/* Section headers */
-h2 {
-    font-size: 30px;
-    margin-bottom: 2px;
-    background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.logo {
-    letter-spacing: 1px;
-}
-
-.logo {
-    font-size: 18px;
-    font-weight: bold;
-    top: 20px;
-    left: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(170, 103, 103);
-    z-index: 1000;
-}
-
-.menu {
+nav ul {
     display: flex;
-    gap: 20px;
     list-style: none;
 }
 
-.menu a {
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: rgb(194, 184, 184); /* samakan dengan logo */
-    font-weight: 600;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-.menu a:hover {
-    border-bottom: 2px solid rgb(170, 103, 103);
+nav ul li a:hover {
+    color: #ffd6ff;
 }
 
-.menu li:hover {
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-    color: #4218c2;
+/* Section */
+section {
+    padding: 80px 30px;
 }
 
-.search input {
-    padding: 8px 15px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-}
-
-/* HERO */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    background: linear-gradient(90deg, #b88e8f, #c96c97);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #dddddd;
+h2 {
     margin-bottom: 20px;
 }
 
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    margin-top: 15px;
+}
+
 .btn {
-    background: #130930;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 40px;
+    margin-top: 25px;
+    padding: 10px 25px;
+    background: white;
+    color: #5f0a87;
+    border-radius: 25px;
     text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #7c4ad1;
-    transform: translateY(-2px);
+    background: #ffd6ff;
 }
 
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.hero-text p {
-    color: #bbbbbb;
-}
-
-.hero-image img {
-    width: 500px;
-    border-radius: 10px;
-}
-/* MOVIE SECTION */
-.movies {
-    padding: 40px 60px;
-}
-
-.movies h2 {
-    margin-bottom: 40px;
-}
-
-.movie-list {
-    display: flex;
-    gap: 30px;
+/* Card */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .card {
-    background: linear-gradient(135deg, #4a00e0, #750f8a);
-    padding: 30px 20px;
-    border-radius: 12px;
-    min-width: 150px;
-    text-align: center;
-    cursor: pointer;
-    color: #fff;
-    transition: transform 0.2s, box-shadow 0.2s;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    background: rgba(255,255,255,0.2);
 }
 
-.card:hover {
-    background-color: #7f5af0;
+/* Education */
+.education-list li {
+    margin: 10px 20px;
+    
+}
+
+/* Social Media */
+.social-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.social-card i {
+    font-size: 20px;
+}
+
+/* Warna brand */
+.instagram i {
+    color: #E1306C;
+}
+
+.github i {
+    color: #000000;
+}
+
+.tiktok i {
+    color: #000000;
+}
+
+.social-card:hover {
+    background: white;
+    color: #5f0a87;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px auto;
+    border: 5px solid white;
+    box-shadow: 0 0 25px rgba(255,255,255,0.4);
+}
+.profile-img:hover {
+    transform: scale(1.05);
+}
+.skill-card {
+    text-align: center;
+}
+
+.skill-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Warna asli brand */
+.fa-html5 {
+    color: #E34F26;
+}
+
+.fa-css3-alt {
+    color: #1572B6;
+}
+
+.fa-php {
+    color: #777BB4;
+}
+
+.fa-database {
+    color: #f29111;
+}
+
+.fa-pen-ruler {
+    color: #ff69b4;
 }
