@@ -218,3 +218,6 @@ form, input, textarea {
     opacity: 1 !important;
     visibility: visible !important;
 }
+section {
+    opacity: 1;
+}
