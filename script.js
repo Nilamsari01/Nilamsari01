@@ -32,7 +32,7 @@ window.onload = () => {
     
     // Memberikan efek awal pada setiap section agar bisa di-animate
     document.querySelectorAll("section").forEach(section => {
-        section.style.opacity = "0";
+        section.style.opacity = "1";
         section.style.transform = "translateY(30px)";
         section.style.transition = "all 0.8s ease-out";
         observer.observe(section);

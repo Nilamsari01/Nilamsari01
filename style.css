@@ -219,5 +219,6 @@ form, input, textarea {
     visibility: visible !important;
 }
 section {
-    opacity: 1;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
