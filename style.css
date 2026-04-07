@@ -222,3 +222,13 @@ section {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+#contact {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+form {
+    display: block !important;
+    background:purple; /* biar kelihatan jelas */
+}
