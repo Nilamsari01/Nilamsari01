@@ -212,3 +212,9 @@ footer {
 .fa-pen-ruler {
     color: #ff69b4;
 }
+
+form, input, textarea {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
